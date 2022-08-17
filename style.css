@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    /* align items: center makes navlinks align to the center of our brandname which 
+    will be larger in size */
+    align-items: center;
+    background-color: #0a9396;
+    color: white;
+}
+
+/* style brand title */
+.brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+/*Style navbar link */
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex; /*puts elements side by side*/
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
