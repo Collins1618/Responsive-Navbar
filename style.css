@@ -14,7 +14,7 @@ body{
     /* align items: center makes navlinks align to the center of our brandname which 
     will be larger in size */
     align-items: center;
-    background-color: #0a9396;
+    background-color: #15616d;
     color: white;
 }
 
@@ -76,6 +76,7 @@ media query*/
     .navbar-links{
         display: none;
         width: 100%;
+        background-color: #84a98c;
     }
 
     .navbar{
