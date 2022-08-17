@@ -39,9 +39,41 @@ body{
     text-decoration: none;
     color: white;
     padding: 1rem;
-    display: block;
+    display: block; /*give them more space*/
 }
 
 .navbar-links li:hover{
     background-color: #a8dadc;
+}
+
+.toggle-button {
+    position: absolute; /*so that we can force to be on the right
+    without messing with the flow of our document */
+    top: .75rem;
+    right: 1rem;
+    display: none; /*does not display by default
+    because we want it to show on smaller screens only*/
+    flex-direction: column; /*content line up from top to bottom*/
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*if screen is less that 600px wide, run the code inside the 
+media query*/
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex; /*so that it can show up*/
+    }
+
+    .navbar-links{
+        display: none;
+    }
 }
